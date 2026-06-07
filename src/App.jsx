@@ -1,9 +1,8 @@
-
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [catUrl, setCatUrl] = useState('https://cataas.com/cat');
+  const [catUrl, setCatUrl] = useState("https://cataas.com/cat");
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchNewCat = () => {
@@ -24,12 +23,16 @@ function App() {
           <img
             src={catUrl}
             alt="Um gato aleatório"
-            className={`cat-image ${isLoading ? 'hidden' : ''}`}
+            className={`cat-image ${isLoading ? "hidden" : ""}`}
             onLoad={handleImageLoad}
           />
         </div>
-        <button className="fetch-button" onClick={fetchNewCat} disabled={isLoading}>
-          {isLoading ? 'Buscando...' : 'Mais um gatinho!'}
+        <button
+          className="fetch-button"
+          onClick={fetchNewCat}
+          disabled={isLoading}
+        >
+          {isLoading ? "Buscando..." : "Mais um gatinho!"}
         </button>
       </main>
     </div>

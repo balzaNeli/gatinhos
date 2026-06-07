@@ -34,7 +34,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   background: -webkit-linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-  -webkit-background-clip: text;
+  
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
